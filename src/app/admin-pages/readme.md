@@ -24,7 +24,6 @@ Customer Details
 Customer Support Interactions
 Customer Feedback and Reviews
 Inventory Management:
-
 Stock Levels Overview
 Low Stock Alerts
 Reorder Management
