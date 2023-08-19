@@ -16,16 +16,23 @@ import { ContactUsComponent } from './Public-Pages/contact-us/contact-us.compone
 import { AboutUsComponent } from './Public-Pages/about-us/about-us.component';
 import { AdminDashboardComponent } from './admin-pages/admin-dashboard/admin-dashboard.component';
 import { OrderListComponent } from './admin-pages/order-list/order-list.component';
-import { CustomerManagementComponent } from './admin-pages/customer-management/customer-management.component';
-import { InventoryManagementComponent } from './admin-pages/inventory-management/inventory-management.component';
-import { PromotionsAndDiscountsComponent } from './admin-pages/promotions-and-discounts/promotions-and-discounts.component';
-import { ReportsAndAnalysisComponent } from './admin-pages/reports-and-analysis/reports-and-analysis.component';
-import { ContentManagementComponent } from './admin-pages/content-management/content-management.component';
-import { UserManagementComponent } from './admin-pages/user-management/user-management.component';
-import { NotificationComponent } from './admin-pages/notification/notification.component';
-import { BackupAndDataManagementComponent } from './admin-pages/backup-and-data-management/backup-and-data-management.component';
-import { SupportAndHelpdeskComponent } from './admin-pages/support-and-helpdesk/support-and-helpdesk.component';
-import { SettingsComponent } from './admin-pages/settings/settings.component';
+import {CustomerManagementComponent} from './admin-pages/customer-management/customer-management.component';
+import {InventoryManagementComponent} from './admin-pages/inventory-management/inventory-management.component';
+import {
+  PromotionsAndDiscountsComponent
+} from './admin-pages/promotions-and-discounts/promotions-and-discounts.component';
+import {ReportsAndAnalysisComponent} from './admin-pages/reports-and-analysis/reports-and-analysis.component';
+import {ContentManagementComponent} from './admin-pages/content-management/content-management.component';
+import {UserManagementComponent} from './admin-pages/user-management/user-management.component';
+import {NotificationComponent} from './admin-pages/notification/notification.component';
+import {
+  BackupAndDataManagementComponent
+} from './admin-pages/backup-and-data-management/backup-and-data-management.component';
+import {SupportAndHelpdeskComponent} from './admin-pages/support-and-helpdesk/support-and-helpdesk.component';
+import {SettingsComponent} from './admin-pages/settings/settings.component';
+import {HttpClientModule} from "@angular/common/http";
+import {NavbarComponent} from './shared/navbar/navbar.component';
+import {AFooterComponent} from './shared/a-footer/a-footer.component';
 
 @NgModule({
   declarations: [
@@ -53,10 +60,13 @@ import { SettingsComponent } from './admin-pages/settings/settings.component';
     BackupAndDataManagementComponent,
     SupportAndHelpdeskComponent,
     SettingsComponent,
+    NavbarComponent,
+    AFooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

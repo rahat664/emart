@@ -1,1 +1,61 @@
-<p>homepage works!</p>
+<div class="bg-gray-100">
+  <!-- Hero Section -->
+  <div class="bg-cover bg-center h-96"
+       style="background-image: url('https://images.unsplash.com/photo-1441123285228-1448e608f3d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');">
+    <div class="container mx-auto h-full flex items-center justify-center text-white">
+      <div class="text-center">
+        <h1 class="text-5xl font-semibold mb-4">Welcome to Aimart</h1>
+        <p class="text-lg mb-8">Your one-stop shop for all your shopping needs.</p>
+        <a href="/products" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Product Section -->
+  <div class="container mx-auto py-12">
+    <h2 class="text-3xl font-semibold mb-4">Featured Product</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <img
+          src="https://images.unsplash.com/photo-1445282768818-728615cc910a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+          alt="Featured Product" class="w-full mb-4">
+        <h3 class="text-xl font-semibold mb-2">Product Name</h3>
+        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="/product/1" class="text-blue-500 hover:underline">Learn More</a>
+      </div>
+      <!-- Repeat for more featured products -->
+    </div>
+  </div>
+
+  <!-- Product Categories Section -->
+  <div class="bg-white py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold mb-4">Product Categories</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="flex items-center justify-center bg-gray-200 p-6 rounded-lg">
+          <a href="/category/electronics" class="text-lg font-semibold text-gray-800 hover:text-blue-500">
+            Electronics
+          </a>
+        </div>
+        <!-- Repeat for more categories -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="container mx-auto py-12">
+    <h2 class="text-3xl font-semibold mb-4">Customer Testimonials</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <div class="mb-4">
+          <i class="fas fa-quote-left text-2xl text-blue-500"></i>
+        </div>
+        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae hendrerit
+          ligula.</p>
+        <h4 class="text-lg font-semibold">John Doe</h4>
+        <p class="text-gray-500">Customer</p>
+      </div>
+      <!-- Repeat for more testimonials -->
+    </div>
+  </div>
+</div>
