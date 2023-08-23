@@ -14,6 +14,14 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./auth/sign-up/sign-up.module').then(m => m.SignUpModule)
+  },
+  {
+    path: 'admin/login',
+    loadChildren: () => import('./admin-pages/admin-login/admin-login.module').then(m => m.AdminLoginModule)
+  },
+  {
+    path: 'admin-dashboard',
+    loadChildren: () => import('./admin-pages/admin-dashboard/admin-dashboard.module').then(m => m.AdminDashboardModule)
   }
 ];
 

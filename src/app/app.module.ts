@@ -33,6 +33,7 @@ import {SettingsComponent} from './admin-pages/settings/settings.component';
 import {HttpClientModule} from "@angular/common/http";
 import {NavbarComponent} from './shared/navbar/navbar.component';
 import {AFooterComponent} from './shared/a-footer/a-footer.component';
+import {AdminSignupComponent} from './admin-pages/admin-signup/admin-signup.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import {AFooterComponent} from './shared/a-footer/a-footer.component';
     SettingsComponent,
     NavbarComponent,
     AFooterComponent,
+    AdminSignupComponent,
   ],
   imports: [
     BrowserModule,

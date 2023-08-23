@@ -1,12 +1,11 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {HomepageComponent} from "./homepage.component";
-import {AuthGuard} from "../../auth/guard/auth.guard";
+import {AdminLoginComponent} from "./admin-login.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: HomepageComponent,
+    component: AdminLoginComponent
   }
 ];
 
@@ -14,4 +13,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomepageRoutingModule { }
+export class AdminLoginRoutingModule {
+}
