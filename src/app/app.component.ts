@@ -6,16 +6,10 @@ import {AuthService} from "./auth/services/auth.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements AfterContentChecked {
-  navbarShowOrNot: boolean;
-  footerShowOrNot: boolean;
+export class AppComponent {
   title = 'emart';
 
   constructor(private auth: AuthService) {
   }
 
-  ngAfterContentChecked() {
-    this.navbarShowOrNot = true
-    this.footerShowOrNot = true
-  }
 }
