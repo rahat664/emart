@@ -30,6 +30,7 @@ export class LoginComponent {
           if (res.message == 'Login successful') {
             localStorage.setItem('token', res.token);
             this.router.navigate(['/'])
+            alert('Logged In Successful');
           }
         }
       })

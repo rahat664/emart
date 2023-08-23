@@ -32,7 +32,11 @@ export class SignUpComponent {
   onSubmit(): void {
     if (this.registerForm.valid) {
       if (this.registerForm.get('password').value == this.registerForm.get('confirmPassword').value) {
-        this.auth.register(this.registerForm.get('name').value, this.registerForm.get('email').value, this.registerForm.get('password').value).subscribe({})
+        this.auth.register(this.registerForm.get('name').value, this.registerForm.get('email').value, this.registerForm.get('password').value).subscribe({
+          next: (res) => {
+            alert("User Created Successfully")
+          }
+        })
       } else {
         this.registerForm.get('confirmPassword').setErrors({confirmError: "Confirm password doesn't Match"})
       }

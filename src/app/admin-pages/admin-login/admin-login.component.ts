@@ -28,6 +28,7 @@ export class AdminLoginComponent {
       this.auth.adminLogin(this.loginForm.get('username').value, this.loginForm.get('password').value).subscribe({
         next: (res) => {
           if (res.message == 'Login successful') {
+            alert("Admin Login Successful");
             localStorage.setItem('adminToken', res.token);
             this.router.navigate(['admin-dashboard'])
           }
